@@ -7,7 +7,11 @@ package tree_sitter_javascript
 // #endif
 import "C"
 
-import "unsafe"
+import (
+	"unsafe"
+
+	_ "github.com/go-tree-sitter/tree-sitter-javascript/src"
+)
 
 // Get the tree-sitter Language for this grammar.
 func Language() unsafe.Pointer {
